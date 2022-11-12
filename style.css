@@ -13,11 +13,13 @@ body {
   padding: 0;
   line-height: 1.4;
   font-family: rounded;
-}
-.header {
   background-image: url(./img/background.jpg);
   background-attachment: fixed;
   background-size: 100% 100%;
+  flex-wrap: wrap;
+}
+
+.header {
   display: flex;
   flex-direction: column;
   text-shadow: 5px 5px 10px black;
@@ -29,6 +31,7 @@ body {
   background-color: #0b3075;
   padding: 10px 30px;
   background-color: transparent;
+  width: 100%;
 }
 
 .header-title {
@@ -52,10 +55,10 @@ body {
 
 .secheader {
   display: flex;
-  height: 450px;
   margin: 150px 0px;
   align-items: center;
   padding: 50px;
+  gap: 100px;
   justify-content: space-between;
 }
 
@@ -63,7 +66,6 @@ body {
   color: white;
   font-weight: bold;
   font-size: 52px;
-  width: 600px;
   align-self: center;
 }
 
@@ -80,19 +82,9 @@ body {
   padding: 30px 0px;
 }
 
-.secheader-text {
-  width: 500px;
-  border-radius: 40px;
+.secheader-texts {
   padding: 10px 30px;
-}
-
-.secheader-imgs {
-  border-radius: 20px;
-}
-
-.imgs-container {
-  display: flex;
-  gap: 50px;
+  width: 500px;
 }
 
 a:link,
