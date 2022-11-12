@@ -32,6 +32,7 @@ body {
   padding: 10px 30px;
   background-color: transparent;
   width: 100%;
+  z-index: 1;
   position: fixed;
   background-color: black;
 }
@@ -120,10 +121,16 @@ body {
 
 .quote-box {
   height: 450px;
-  background-color: black;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 10px 30px;
+  background-image: url(img/quote-background.jpg);
+  background-color: black;
+  background-attachment: fixed;
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .quote-content {
