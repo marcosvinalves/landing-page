@@ -12,12 +12,15 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.4;
+  font-family: rounded;
 }
 .header {
-  background-image: url(./img/background-img.gif);
+  background-image: url(./img/background.jpg);
+  background-attachment: fixed;
   background-size: 100% 100%;
   display: flex;
   flex-direction: column;
+  text-shadow: 5px 5px 10px black;
 }
 
 .main-header {
@@ -25,8 +28,7 @@ body {
   justify-content: space-between;
   background-color: #0b3075;
   padding: 10px 30px;
-  background-color: black;
-  opacity: 0.7;
+  background-color: transparent;
 }
 
 .header-title {
@@ -35,7 +37,6 @@ body {
   gap: 10px;
   text-transform: uppercase;
   font-weight: bold;
-  font-family: rounded;
   letter-spacing: 2px;
   font-size: 24px;
   color: white;
@@ -46,24 +47,52 @@ body {
   align-items: center;
   justify-content: space-around;
   gap: 20px;
-  font-family: rounded;
   font-size: 20px;
 }
 
-.sec-header {
+.secheader {
   display: flex;
-  justify-content: center;
-  align-self: center;
-  margin: 100px 450px;
   height: 450px;
-  width: 800px;
-  border-radius: 40px;
-  background-color: black;
-  opacity: 0.7;
+  margin: 150px 0px;
+  align-items: center;
+  padding: 50px;
+  justify-content: space-between;
 }
 
-.header-content {
-  width: 00px;
+.secheader-title {
+  color: white;
+  font-weight: bold;
+  font-size: 52px;
+  width: 600px;
+  align-self: center;
+}
+
+.secheader-span {
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 72px;
+  display: block;
+}
+
+.secheader-content {
+  color: white;
+  font-size: 18px;
+  padding: 30px 0px;
+}
+
+.secheader-text {
+  width: 500px;
+  border-radius: 40px;
+  padding: 10px 30px;
+}
+
+.secheader-imgs {
+  border-radius: 20px;
+}
+
+.imgs-container {
+  display: flex;
+  gap: 50px;
 }
 
 a:link,
