@@ -13,9 +13,6 @@ body {
   padding: 0;
   line-height: 1.4;
   font-family: rounded;
-  background-image: url(./img/background.jpg);
-  background-attachment: fixed;
-  background-size: 100% 100%;
   flex-wrap: wrap;
 }
 
@@ -23,6 +20,9 @@ body {
   display: flex;
   flex-direction: column;
   text-shadow: 5px 5px 10px black;
+  background-image: url(./img/background.jpg);
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
 
 .main-header {
@@ -32,6 +32,8 @@ body {
   padding: 10px 30px;
   background-color: transparent;
   width: 100%;
+  position: fixed;
+  background-color: black;
 }
 
 .header-title {
@@ -85,6 +87,52 @@ body {
 .secheader-texts {
   padding: 10px 30px;
   width: 500px;
+  flex-wrap: wrap;
+}
+
+.popular-box {
+  background-color: #000;
+  padding: 10px 30px;
+}
+
+.popular-title {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px 0px;
+}
+
+.popular-scroll {
+  white-space: nowrap;
+  position: relative;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.scroll-img {
+  cursor: pointer;
+}
+
+.scroll-img:hover {
+  border: 4px solid #d5d5d5;
+}
+
+::-webkit-scrollbar {
+  height: 10px;
+  width: 4px;
+  border-radius: 10px;
+  border: 1px solid #000;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #d5d5d5;
 }
 
 a:link,
