@@ -29,9 +29,7 @@ body {
 .main-header {
   display: flex;
   justify-content: space-between;
-  background-color: #0b3075;
   padding: 10px 30px;
-  background-color: transparent;
   width: 100%;
   z-index: 1;
   position: fixed;
@@ -92,6 +90,21 @@ body {
   flex-wrap: wrap;
 }
 
+.toplog-button,
+.topreg-button {
+  margin-top: 30px;
+  width: 100px;
+  color: black;
+  font-weight: bold;
+  background-color: white;
+  border-style: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  border: 2px solid black;
+  padding: 10px 10px;
+  font-family: rounded;
+}
+
 .popular-box {
   background-color: #000;
   padding: 10px 30px;
@@ -114,6 +127,7 @@ body {
 
 .scroll-img {
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .scroll-img:hover {
@@ -125,10 +139,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 100px 0px;
   padding: 10px 30px;
   background-image: url(img/quote-background.jpg);
   background-color: black;
-  background-attachment: fixed;
   background-size: 50% 100%;
   background-repeat: no-repeat;
   background-position: right;
@@ -202,7 +216,7 @@ body {
   width: 200px;
 }
 
-.reg-button:hover {
+button:hover {
   cursor: pointer;
   background-color: black;
   color: white;
